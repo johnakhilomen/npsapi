@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>National Park Services API</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />  
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <main>
+
+    <div class=container>
+      <h1>Park Finder</h1>
+        <form id="parkForm">
+          <label for="state-name">Enter a state you want to go:</label>  
+          <input type="text" id="state-name-input" placeholder="Enter a State"/><br>
+          <label for="park-number">How many parks would you like to review?</label>
+          <input type="number" name="max-results-input" id="max-results-input" value= "10"><br>
+          <input type="submit" value="Search"> 
+        </form>
+        
+        <h2 id="results"></h2>    
+        <ul id="results-list">
+        </ul>
+    </section>
+    </div>
+  </main> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
+
